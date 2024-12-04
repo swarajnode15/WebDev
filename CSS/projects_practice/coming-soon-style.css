@@ -14,52 +14,46 @@ html {
   align-items: center;
 }
 
-.containt {
-  background-color: #dedede;
+.content {
+  background-color: #c4c4c4;
+  padding: 10px;
   text-align: center;
-  padding: 2rem;
-  border-radius: 10px;
-  max-width: 350px;
 }
 
-.logo {
-  width: 200px;
-  object-fit: contain;
-}
-
-h1 {
-  color: rgb(82, 82, 82);
-  margin-bottom: 20px;
+h2 {
+  color: #363636;
+  margin:10px;
 }
 
 p {
-  color: rgb(82, 82, 82);
-  margin-bottom: 20px;
+  color: #363636;
+  margin:10px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
+img{
+    width: 250px;
+    object-fit: contain;
 }
 
-input[type="email"] {
-  padding: 5px;
-  margin-bottom: 5px;
-  background-color: #ebe9e9;
-  border: 1px solid #000;
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 
-button {
-  padding: 5px;
-  margin-bottom: 5px;
-  background-color: #3e6af9;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-  transition: background-color 0.3s ease-in-out;
+input[type="email"]{
+    padding: 5px;
+    margin-bottom: 5px;
 }
 
-button:hover {
-  background-color: #0e46ff;
+button{
+    padding: 5px;
+    border: none;
+    background-color: #006680;
+    color: #fff;
+    border-radius: 2px;
+}
+
+button:hover{
+    background-color: #003c4b;
 }
