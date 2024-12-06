@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid-page</title>
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+        }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        /* gap: 10px; */
+        height:100vh
+      }
+
+      .grid-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #111;
+        background-color: #fda8a8;
+       margin: 5px;
+      }
+
+      .item1 {
+        grid-column: 1/5;
+        grid-row: 1/2;
+      }
+      .item2 {
+        grid-row: 2/4;
+      }
+      .item3 {
+        grid-column: 2/5;
+        grid-row: 2/4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-content item1">1</div>
+      <div class="grid-content item2">2</div>
+      <div class="grid-content item3">3</div>
+    </div>
+  </body>
+</html>
